@@ -1,0 +1,116 @@
+html, body{
+    position: relative;
+    overflow-x: hidden;
+    a{
+        color: unset;
+    }
+    
+}
+
+.bg-principal{
+    background-color: rgba(128, 126, 251, 0.2);
+}
+
+.body-index{
+    @extend %background-padrao;
+    @extend %font-padrao;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+
+    .generic-form{
+        button{
+            background-color: #75E2E4;
+            border: none;
+        }
+    }
+}
+
+header.index{
+    @extend %centralizado;
+    padding-top: 50px;
+
+    .label-logo{
+        display: block;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    h1{
+        @extend %titulo1;
+    }
+
+    
+}
+
+section.index{
+    padding-bottom: 60px;
+
+    .texto{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @extend %texto-azulEscuro;
+    }
+
+    .menu-index{
+        float: right;
+        font-size: 25px;
+        @extend %texto-azulEscuro;
+        padding-right: 20px;
+    }
+
+    .menu-item{
+        color: $texto-cor1;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+footer{
+    @extend %centralizado;
+    @extend %texto-azulEscuro;
+    width: 100%;
+    bottom: 0;
+    // position: initial;
+    position: absolute;
+}
+
+.titulo2 {
+    font-weight: bold;
+    text-align: center;
+    color: #170071;
+    margin-bottom: 50px;
+}
+
+.mc-item{
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.btn-close{
+    cursor: pointer;
+}
+
+.overlaying{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+button{
+    &:hover{
+        opacity: 0.8;
+    }
+}
+

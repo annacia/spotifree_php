@@ -1,0 +1,7 @@
+#Arquivos na maquina para serem ignorados
+
+autoload/classes/conecta.php
+data_uploads/*
+music/*
+.sass-cache/*
+.vscode/*

@@ -1,0 +1,61 @@
+body {
+    @extend %font-padrao;
+    background-color: $body-bg;
+}
+
+.header-principal{
+    @extend %box-shadow;
+    @extend %background-secundario;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    .container{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .principal-menu {
+        font-size: 20px;
+        padding: 15px 20px;
+        display: block;
+
+        @media screen and (min-width: 380px) {
+            display: flex;
+        }
+    }
+
+
+    .principal-menu-item{
+        color: $texto-cor2;
+        display: inline-block;
+        font-size: 25px;
+        margin: 0 auto;
+
+        &:first-child{
+            @media screen and (min-width: 760px){
+                margin-left: 0px;
+                text-align: left;
+            }
+        }
+
+        &:nth-child(3){
+            @media screen and (min-width: 760px){
+                margin-right: 0px;
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+h2{
+    font-weight: bold;
+    text-align: center;
+    color: #170071;
+    margin-bottom: 50px;
+}
+
+.click-off{
+    display:none;
+}

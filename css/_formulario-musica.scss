@@ -1,0 +1,66 @@
+.form-music.container{
+    @media screen and (min-width: 760px){
+        width: 50%;
+    }
+}
+
+.form-music{
+    color: $texto-cor1;
+
+    .input-text{
+        width: 100%;
+        border-radius: 5px;
+        border-color: $texto-cor1;
+    }
+
+    .jfilestyle-theme-default{
+        position: relative;
+        
+        div[name="filedrag"]{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: block;
+        }
+
+        .focus-jfilestyle{
+            border: 1px solid;
+            text-align: center;
+            padding: 5px 0px;
+            border-radius: 5px;
+            background-color: #807EFB;
+            width: 100%;
+            display: block;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+        
+        }
+
+        input[type="text"]{
+            width: 100%;
+            background-color: rgba(113, 109, 249, 0.39);
+            border: 0px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+    }
+
+    .select-upload{
+        @extend %select-feed;
+        display: unset;
+    }
+
+    .btn-upload{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        border-radius: 5px;
+        background-color: $background-secundario-cor;
+        border: 1px solid;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

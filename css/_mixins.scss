@@ -1,0 +1,75 @@
+%font-padrao{
+    font-family: 'Philosopher', sans-serif;
+}
+
+%background-padrao{
+    background-color: $background-principal-cor;
+}
+
+%background-secundario{
+    background-color: $background-secundario-cor;
+    color:$texto-cor2;
+}
+
+%background-dark{
+    background-color: $texto-cor2;
+    color: $texto-cor3;
+
+}
+
+%centralizado{
+    text-align: center;
+    justify-content: center;
+}
+
+%titulo1{
+    color: $texto-cor1;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+%titulo2{
+    color: $texto-cor2;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+%texto-azulEscuro{
+    color: $texto-cor1;
+}
+
+%botao-primario-shape{
+    border: none;
+    border-radius: 5px;
+}
+
+%box-shadow{
+    -webkit-box-shadow: 1px 9px 58px -9px rgba(0,0,0,0.8);
+    -moz-box-shadow: 1px 9px 58px -9px rgba(0,0,0,0.8);
+    box-shadow: 1px -1px 49px -9px rgba(0,0,0,0.8);
+}
+
+%select-feed{
+    display: block;
+    width: 125px;
+    border-radius: 5px;
+    border-color: $texto-cor1;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-weight: bolder;
+    color: $texto-cor1;
+}
+
+%img-min{
+    width: 100px;
+    border-radius: 10px;
+}
+
+%before-after{
+    position: absolute;
+    content: ' ';
+}
+
+%hidden{
+    display: none;
+}

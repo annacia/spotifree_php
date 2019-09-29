@@ -1,0 +1,178 @@
+.modal.modal-generic{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.modal-generic.modal-small{
+    .modal-main{
+        z-index: 2;
+        @extend %background-secundario;
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-width: 300px;
+        height: 320px;
+        margin: 100px auto;
+        width: auto;
+        border-radius: 5px;
+    }
+
+    .modal-close i{
+        float: right;
+        padding-top: 15px;
+        color: $texto-cor2;
+        font-size: 20px;
+    }
+
+    .title-modal{
+        @extend %centralizado;
+        @extend %titulo2;
+    }
+
+    .form-index{
+        text-align: left;
+
+        a{
+            display: inline-block;
+            padding-top: 10px;
+            color: $texto-cor1;
+        }
+    }
+
+    .form-index-label{
+        margin-top: 25px;
+    }
+
+    .form-index-input{
+        width: -webkit-fill-available;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+    .index-btn{
+        float: right;
+        margin-top: 25px;
+        @extend %background-dark;
+        padding: 5px 15px;
+        @extend %botao-primario-shape;
+    }
+
+    .modal-overlay.modal-close{
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        position: fixed;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 1;
+    }
+}
+
+.modal-generic.modal-big{
+    .modal-main{
+      background-color: #807efb;
+      color: #fff;
+    }
+    .modal-close{
+        float: right;
+        font-size: 30px;
+    }
+}
+
+.addPlaylistModal{
+    .modal-close{
+        font-size: 30px;
+    }
+    .title-modal{
+        font-size: 23px;
+        @media screen and (min-width: 760px){
+            font-size: 30px;
+        }
+    }
+    .modal-body{
+        .list-playlist{
+            font-size: 20px;
+            .playlist-item{
+                color: #000;
+                display: block;
+                text-align: left;
+                padding: 15px;
+                width: 100%;
+                i{
+                    float: left;
+                    font-size: 40px;
+                    line-height: 40px;
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    @media screen and (min-width: 760px){
+                        width: 100px;
+                        height: 100px;
+                        line-height: 100px;
+                        font-size: 80px;
+                    }
+                }
+                img{
+                    width: 40px;
+                    @media screen and (min-width: 760px){
+                        width: 100px;
+                    }
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 50px;
+                    @media screen and (min-width: 760px){
+                        line-height: 100px;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        .nova-playlist{
+            margin-top: 0px;
+            font-size: 20px;
+            a{
+                i{
+                    font-size: 46px;
+                    @media screen and (min-width: 760px){
+                        font-size: 100px;
+                    }
+                }
+                span{
+                    font-size: 16px;
+                    padding-left: 5px;
+                    @media screen and (min-width: 760px){
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .adicionar-playlist{
+            label{
+                color: #170071;
+                font-size: 16px;
+            }
+            input.nova-playlist-nome{
+                color: #170071;
+                height: 40px;
+                border: 2px solid #170071;
+                width: 100%;
+                @media screen and (min-width: 760px){
+                    width: unset;
+                }
+            }
+            .nova-playlist-btn{
+                background-color: #807EFB;
+                border-color: #807EFB;
+                color: #170071;
+                height: 40px;
+                width: 100%;
+                @media screen and (min-width: 760px){
+                    width: unset;
+                }
+            }
+        }
+    }
+}
+
+

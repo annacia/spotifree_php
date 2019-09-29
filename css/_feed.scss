@@ -1,0 +1,91 @@
+section.corpo{
+    padding: 15px;
+    padding-top: 90px;
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 122px;
+    .select-feed{
+        cursor:pointer;
+        @extend %select-feed;
+    }
+
+    #feed-musics-selecteds{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        .feed-musica-item{
+            width: 200px;
+            height: 100%;
+            position: relative;
+            margin: 40px auto;
+    
+            .music-click{
+                width: 200px;
+                height: 100%;
+                display: block;
+                justify-content: center;
+                text-align: center;
+                &:hover{
+                    .play-music-art{
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 3;
+                        height: 200px;
+                        font-size: 200px;
+                        opacity: 0.6;
+                    
+                    }
+                }
+            }
+
+            .label-music-art-feed{
+                width: 200px;
+                overflow: hidden;
+                height: 200px;
+                position: relative;
+                display: block;
+                border-radius: 10px;
+            }
+
+            .play-music-art{
+                display: none;
+            }
+
+            .art-musica{
+                height: 200px;
+                width: auto;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            .desc-musica{
+                padding-left: 5px;
+                margin: 5px 0;
+                padding-top: 5px;
+                font-weight: bolder;
+                color: $texto-cor1;
+                display: block;
+                text-align: center;
+                width: 100%;
+                
+            }
+            
+            .delete-music{
+                position: absolute;
+                top: -20px;
+                left: 5px;
+                &:hover{
+                    color: #f00;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+
+}

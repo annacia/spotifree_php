@@ -1,0 +1,20 @@
+.generic-form{
+    width: 280px;
+    color: $texto-cor1;
+    margin: 0 auto;
+
+    input{
+        width: 280px;
+        border: 1px solid $texto-cor1;
+        border-radius: 5px;
+        height: 30px;
+    }
+
+    button{
+        padding: 5px 15px;
+        background-color: $background-principal-cor;
+        border-radius: 5px;
+        font-weight: bold;
+        float: right;
+    }
+}
