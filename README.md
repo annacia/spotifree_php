@@ -3,6 +3,10 @@ Fiz esse projeto para a disciplina de PHP que tive na faculdade, no 1º semestre
 Como foi meu primeiro projeto, existem diversos problemas de lógica e boas práticas para serem corrigidos.
 
 
+# Descrição:
+Esse projeto permite que o usuário se cadastre e faça upload de suas músicas, podendo acrescentá-las em albuns e criar playlists, podendo reproduzi-las no player de música disponibilizado no sistema.
+
+
 # Instruções:
 * Após clonar esse projeto, o arquivo <dump.mysql> deve ser importado para o banco MySQL;
 * O arquivo <autoload/classes/Model/Conexao.php> deve ser alterado com as configurações do seu MySQL;
