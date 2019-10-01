@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once 'autoload/autoload.php';
 require_once 'autoload/classes/userDAO.php';
 $user = verificaSessao();
@@ -36,7 +36,7 @@ require_once 'autoload/classes/playlistDAO.php';
             </nav>
         </div>
     </header>
-    
+
     <!-- incluir as divs dos menus -->
     <div class="menu-pessoal-wrap click-off">
         <header class="menu-pessoal">
@@ -53,7 +53,7 @@ require_once 'autoload/classes/playlistDAO.php';
                     <i class="fas fa-plus"></i>
                 </span>
                 <ul class="sub-menu click-off">
-                    <?php 
+                    <?php
                     $Umusicas = userMusics($conexao2, $user);
                     $i = 0;
                     foreach ($Umusicas as $Umusica) :
@@ -78,12 +78,12 @@ require_once 'autoload/classes/playlistDAO.php';
                     <i class="fas fa-plus"></i>
                 </span>
                 <ul class="sub-menu click-off">
-                    <?php 
+                    <?php
                     $Ualbuns = userAlbuns($conexao2, $user);
-                    foreach ($Ualbuns as $Ualbum) :
+                    foreach ($Ualbuns as $album) :
                     ?>
                        <li class="sub-menu-item">
-                            <a href="#" class="album-click-user" data-index="<?=$Ualbum['pkAlbum']; ?>"><?=$Ualbum['nameAlbum']; ?> <i class="fas fa-play"></i></a>
+                            <a href="#" class="album-click-user" data-index="<?=$album['pkAlbum']; ?>"><?=$album['nameAlbum']; ?> <i class="fas fa-play"></i></a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
@@ -99,7 +99,7 @@ require_once 'autoload/classes/playlistDAO.php';
                     <i class="fas fa-plus"></i>
                 </span>
                 <ul class="sub-menu click-off">
-                    <?php 
+                    <?php
                     $Uplaylists = userPlaylists($conexao2, $user);
                     foreach ($Uplaylists as $Uplaylist) :
                     ?>
@@ -138,12 +138,12 @@ require_once 'autoload/classes/playlistDAO.php';
                     <i class="fas fa-plus"></i>
                 </span>
                 <ul class="sub-menu click-off">
-                    <?php 
+                    <?php
                     $categorias = worldCategoria($conexao2);
                     foreach ($categorias as $categoria) :
                     ?>
                         <li class="sub-menu-item"><a href="#" data-value="<?= $categoria['pkcategory']; ?>"><?= $categoria['nameCategory']; ?></a></li>
-                    <?php endforeach; ?>  
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>
@@ -199,7 +199,7 @@ require_once 'autoload/classes/playlistDAO.php';
         <div class="timeline">
             <div class="timeline-bar">
                 <span class="before"></span>
-                <span class="after"></span>    
+                <span class="after"></span>
             </div>
         </div>
         <div class="controles-musica">

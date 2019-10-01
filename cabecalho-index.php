@@ -18,7 +18,7 @@
     <div class="body-index">
         <header class="index container">
             <span class="label-logo">
-                <img class="logo" src="img/logo.png" alt="SpotiFree">
+                <img class="logo" src="img/logo2.jpg" alt="SpotiFree">
             </span>
             <h1 class="titulo">SpotiAll</h1>
         </header>
